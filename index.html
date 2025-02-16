@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelo -Your Travel Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/img/navicon.png" image/x-icon">
+</head>
+
+<body>
+
+
+    <!-- header with nav section  -->
+    <header>
+
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Travelo</a>
+            </div>
+
+            <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+                aria-controls="navbar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000">
+                    <path
+                        d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+                </svg>
+            </button>
+
+            <ul class="nav-links">
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                            fill="#000">
+                            <path
+                                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                        </svg>
+                    </button>
+                </li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#" class="btn">Sign up</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- Hero section  -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__left">
+                <div class="hero__title">
+                    <h2>Best Destinations around the world</h2>
+                    <h1>Travel, enjoy and live a new and full life</h1>
+                </div>
+                <p class="hero__text">Built Wicket longer admire do barton vanity itself do in it. Preferred to
+                    sportsmen it engrossed
+                    listening. Park gate sell they west hard for the.</p>
+                <div class="ctn">
+                    <a href="#" class="btn">Find out more</a>
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                            color="#a41111" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                            <path
+                                d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                fill="currentColor" />
+                        </svg>
+                        <span>Play Demo</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="hero__right">
+                <img src="assets/img/Traveller.png" alt="traveller img" class="traveller">
+            </div>
+        </div>
+    </section>
+
+    <!-- main section  -->
+    <main>
+        <!-- service section  -->
+        <section class="service">
+            <div class="container">
+                <div class="service-title">
+                    <h3>Category</h3>
+                    <h2>We offer best services</h2>
+                </div>
+                <div class="service-category">
+                    <div class="category-col">
+                        <img src="assets/img/cat1.svg" alt="cat1" class="cat-img">
+                        <h4>Calculated Weather</h4>
+                        <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+                    </div>
+                    <div class="extra">
+                        <div class="category-col cat-active">
+                            <img src="assets/img/cat2.svg" alt="cat2" class="cat-img">
+                            <h4>Calculated Weather</h4>
+                            <p>Engrossed listening. Park gate sell they west hard for the.</p>
+                        </div>
+                        <div class="rectangle"></div>
+                    </div>
+                    <div class="category-col">
+                        <img src="assets/img/cat3.svg" alt="cat3" class="cat-img">
+                        <h4>Calculated Weather</h4>
+                        <p>Barton vanity itself do in it. Preferd to men it engrossed listening. </p>
+                    </div>
+                    <div class="category-col">
+                        <img src="assets/img/cat4.svg" alt="cat4" class="cat-img">
+                        <h4>Calculated Weather</h4>
+                        <p>We deliver outsourced aviation services for military customers</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- destination section  -->
+        <section class="destination">
+            <div class="container">
+                <div class="destination-title">
+                    <h3>Top Selling</h3>
+                    <h2>Top destinations</h2>
+                </div>
+
+                <div class="destination-cards">
+
+                    <div class="card">
+                        <img src="https://www.qantas.com/content/dam/qantas/destinations/europe-and-united-kingdom/colosseum-with-sun-setting.jpg/jcr:content/renditions/hero.mobile.jpg"
+                            alt="" class="card-img">
+                        <div class="card-content">
+                            <div class="card-content-title">
+                                <p>Rome, Italy</p>
+                                <p>$5,42k</p>
+                            </div>
+                            <small><img src="assets/img/arrow.svg" alt="" class="arrow"> 10 Days trip</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.qantas.com/content/dam/qantas/destinations/europe-and-united-kingdom/colosseum-with-sun-setting.jpg/jcr:content/renditions/hero.mobile.jpg"
+                            alt="" class="card-img">
+                        <div class="card-content">
+                            <div class="card-content-title">
+                                <p>Rome, Italy</p>
+                                <p>$4.2k</p>
+                            </div>
+                            <small><img src="assets/img/arrow.svg" alt="" class="arrow"> 12 Days trip</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.qantas.com/content/dam/qantas/destinations/europe-and-united-kingdom/colosseum-with-sun-setting.jpg/jcr:content/renditions/hero.mobile.jpg"
+                            alt="" class="card-img">
+                        <div class="card-content">
+                            <div class="card-content-title">
+                                <p>Rome, Italy</p>
+                                <p>$15k</p>
+                            </div>
+                            <small><img src="assets/img/arrow.svg" alt="" class="arrow"> 28 Days trip</small>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- book a trip section  -->
+        <section class="book-trip">
+            <div class="container">
+                <div class="trip__left">
+                    <h3>Easy and Fast</h3>
+                    <h2>Book your next trip in 3 easy steps</h2>
+                    <div class="trip-card">
+                        <div class="card">
+                            <div class="card-left">
+                                <img src="assets/img/Group 7.svg" alt="">
+                            </div>
+                            <div class="card-right">
+                                <b>Choose Destination</b>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Urna, tortor tempus. </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-left">
+                                <img src="assets/img/Group 12.svg" alt="">
+                            </div>
+                            <div class="card-right">
+                                <b>Choose Destination</b>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Urna, tortor tempus. </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-left">
+                                <img src="assets/img/Group 11.svg" alt="">
+                            </div>
+                            <div class="card-right">
+                                <b>Choose Destination</b>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Urna, tortor tempus. </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="trip__right">
+                    <div class="trip__right__card">
+                        <img src="assets/img/trip-right.png" alt="">
+                        <h4>Trip To Greece</h4>
+                        <div class="trip-sechedule">
+                            <span>14-29 June</span>
+                            <span>|</span>
+                            <span>by Robbin joseph</span>
+                        </div>
+                        <div class="trip-ico">
+                            <img src="assets/img/LEAF.png" alt="">
+                            <img src="assets/img/map icon.png" alt="">
+                            <img src="assets/img/send.png" alt="">
+                        </div>
+                        <div class="going">
+                            <img src="assets/img/Group.svg" alt="">
+                            <small>24 People going</small>
+                            <img src="assets/img/love.svg" alt="" class="love">
+                        </div>
+                    </div>
+                    <div class="trip-extra">
+                        <img src="assets/img/Mask Group.svg" alt="" class="mask">
+                        <div class="trip-extra-content">
+                            <small>Ongoing</small>
+                            <h6>Trip to Rome</h6>
+                            <small>40% <span>Completed</span></small>
+                            <img src="assets/img/progrees bar.svg" alt="" class="progress-bar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonial section  -->
+        <section class="testimonial">
+            <div class="container">
+                <div class="testimonial-left">
+                    <h3>Testimonials</h3>
+                    <h2>What people say about Us.</h2>
+                </div>
+                <div class="testimonial-right">
+                    <div class="add-comment">
+                        <div class="user-logo">
+                            <img src="assets/img/user_testimonial.svg" alt="">
+                        </div>
+                        <div class="user-comment">
+                            <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he
+                                same
+                                as knew next. Of believed or diverted no.”</p>
+                            <b>Mike taylor</b>
+                            <p>Texas, USA</p>
+                        </div>
+                    </div>
+                    <div class="add-more-comment">
+                        <div class="user-logo">
+                            <img src="assets/img/user_testimonial.svg" alt="">
+                        </div>
+                        <div class="user-comment">
+                            <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he
+                                same
+                                as knew next. Of believed or diverted no.”</p>
+                            <b>Chris Thomas</b>
+                            <p>CEO of Red Button</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- logos section  -->
+        <section class="logos">
+            <div class="container">
+                <img src="assets/img/image1.svg" alt="">
+                <img src="assets/img/image2.svg" alt="">
+                <img src="assets/img/image3.png" alt="">
+                <img src="assets/img/image4.svg" alt="">
+                <img src="assets/img/image5.svg" alt="">
+
+            </div>
+        </section>
+
+        <!-- subscribe section  -->
+        <section class="subscribe">
+            <div class="container">
+                <div class="wrap-cut">
+                    <img src="assets/img/Ellipse.svg" alt="" class="send">
+                    <h2>Subscribe to get information, latest news and other interesting offers about Jadoo</h2>
+                    <form id="subscribe__form">
+                        <input type="email" placeholder="Your Mail">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="wrap-col">
+                    <a href="#" class="footer-logo">Travelo.</a>
+                    <p class="footer-info">Book your trip in minute, get full Control for much longer.</p>
+                </div>
+                <div class="wrap-col footer-links">
+                    <div class="link-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Mobile</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="#">Help/FAQ</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Affilates</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-col">
+                        <h4>More</h4>
+                        <ul>
+                            <li><a href="#">Airlinefees</a></li>
+                            <li><a href="#">Airline</a></li>
+                            <li><a href="#">Low fare tips</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="wrap-col">
+                    <div class="social-links">
+                        <img src="assets/img/facebook.svg" alt="">
+                        <img src="assets/img/instra.svg" alt="">
+                        <img src="assets/img/twitter.svg" alt="">
+                    </div>
+                    <h5>Discover our app</h5>
+                    <div class="our-app">
+                        <img src="assets/img/Google Play.svg" alt="">
+                        <img src="assets/img/Apple Store.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="copywrite">All rights reserved&copy;travelo.co</div>
+        </div>
+    </footer>
+
+
+    <script src="script.js
+    "></script>
+
+</body>
+
+</html>
